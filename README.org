@@ -1,4 +1,4 @@
-#+title: Hierarchical Network Item Response Model
+#+title: HiNIRM: *Hi*erarchical *N*etwork *I*tem *R*esponse *M*odel
 #+STARTUP: overview inlineimages logdone noindent
 
 
