@@ -1,13 +1,13 @@
-#+title: HiNIRM: *Hi*erarchical *N*etwork *I*tem *R*esponse *M*odel
+#+title: HiNIRM - Hierarchical Network Item Response Model
 #+STARTUP: overview inlineimages logdone noindent
 
 
 * Installation
 #+begin_src sh
-git clone
+git clone https://github.com/Jonghyun-Yun/HiNIRM.git
 #+end_src
 
-C codes for Model1 and Model2 are contained sub-directories =model1= and =model2=, respectively. To compile the code, run
+C codes for Model1 and Model2 are contained sub-directories =model1= and =model2=, respectively. To compile the code, execute the below.
 #+begin_src sh
 cd model{1,2}
 gcc -O3 main.c -o main
