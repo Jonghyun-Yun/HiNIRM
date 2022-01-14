@@ -1,0 +1,27 @@
+#+title: Hierarchical Network Item Response Model
+#+STARTUP: overview inlineimages logdone noindent
+
+
+* Installation
+#+begin_src sh
+git clone
+#+end_src
+
+C codes for Model1 and Model2 are contained sub-directories =model1= and =model2=, respectively. To compile the code, run
+#+begin_src sh
+cd model{1,2}
+gcc -O3 main.c -o main
+#+end_src
+
+* OpenMP support
+=NiNIRM= support parallel computing using OpenMP. To enable it, compile =main= using =-fopenmp= flag. Make sure if your compiler support OpenMP.
+#+begin_src sh
+gcc -O3 main.c -o main -fopenmp
+#+end_src
+
+* Usage
+=header.h= contains tuning parameters for MCMC and parameters for model configuration. To run the program, execute the below:
+#+begin_src sh
+export OMP_NUM_THREADS=<number_of_parallel_workers>
+./main 1
+#+end_src
